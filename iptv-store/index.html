@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique IPTV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
+</head>
+<body>
+    <header>
+        <h1>Boutique IPTV</h1>
+        <p>Choisissez l'abonnement qui vous convient et payez facilement.</p>
+    </header>
+    <div class="container">
+        <div class="plans">
+            <div class="plan">
+                <h2>1 Mois</h2>
+                <p>Accès IPTV pour 1 mois</p>
+                <div class="price">10€</div>
+                <button onclick="addToCart('1 Mois', 10)">Ajouter au panier</button>
+            </div>
+            <div class="plan">
+                <h2>2 Mois</h2>
+                <p>Accès IPTV pour 2 mois</p>
+                <div class="price">18€</div>
+                <button onclick="addToCart('2 Mois', 18)">Ajouter au panier</button>
+            </div>
+            <div class="plan">
+                <h2>6 Mois</h2>
+                <p>Accès IPTV pour 6 mois</p>
+                <div class="price">25€</div>
+                <button onclick="addToCart('6 Mois', 25)">Ajouter au panier</button>
+            </div>
+            <div class="plan">
+                <h2>1 An</h2>
+                <p>Accès IPTV pour 1 an</p>
+                <div class="price">50€</div>
+                <button onclick="addToCart('1 An', 50)">Ajouter au panier</button>
+            </div>
+            <div class="plan">
+                <h2>2 Ans</h2>
+                <p>Accès IPTV pour 2 ans</p>
+                <div class="price">80€</div>
+                <button onclick="addToCart('2 Ans', 80)">Ajouter au panier</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Votre Panier</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total : <span id="cart-total">0€</span></div>
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

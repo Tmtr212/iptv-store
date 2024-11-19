@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.plan {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.plan h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.plan p {
+    font-size: 1rem;
+    color: #777;
+}
+.plan .price {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.plan button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.plan button:hover {
+    background-color: #0056b3;
+}
+.cart {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cart-item span {
+    font-size: 1rem;
+}
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
